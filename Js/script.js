@@ -7,8 +7,6 @@ let skills_sction = document.querySelector(".skills"),
     connect_sction = document.querySelector(".connect"),
     connect_sction_img = document.querySelector(".connect .image"),
     connect_sction_content = document.querySelector(".connect .content"),
-    loading_sction = document.querySelector(".loading"),
-    sections = document.querySelectorAll("section"),
     started = false;
 
 window.onscroll = function(){
@@ -42,12 +40,4 @@ function startNumsProgress(numPreg){
       clearInterval(startedNum);
     }
   },1000 / progress);
-}
-
-// onload
-window.onload = function(){
-  sections.forEach((section)=>{
-    section.style.display = "block";
-  });
-  loading_sction.style.display = "none";
 }
